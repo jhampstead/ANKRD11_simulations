@@ -3,9 +3,9 @@ library(tidyverse)
 library(ggpubr)
 
 #Per nucleotide mutation rates taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461236/pdf/10978293.pdf
-mutation_rates <- fread('/Users/jh/Projects/penetranceANKRD11/data/per_nucleotide_mutation_rates.txt')
+mutation_rates <- fread('~/data/per_nucleotide_mutation_rates.txt')
 mutation_rates <- mutation_rates[,Scaled_Mutation_Rate:=Mutation_Rate*1000000]
-infile <- fread('/Users/jh/Projects/penetranceANKRD11/data/ANKRD11_ENST00000301030.10_4')
+infile <- fread('~/data/ANKRD11_ENST00000301030.10_4')
 total_variants_rd2 = 17
 total_variants_other = 8
 observed_arginines_rd2 = 12
@@ -166,7 +166,7 @@ p2 <- ggplot(data=plot_out,aes(x=mean,y=loc,colour=class)) +
                       guide=guide_legend(override.aes = list(linetype=c(0,0),
                                                              shape=c(19,18)))) +
   scale_y_discrete(labels=plot2_labels)
-  #ggtitle('Figure S3: ANKRD11 missense variants affecting arginine residues in RD2 are overrepresented in the cohort')
+  ggtitle('Figure S3: ANKRD11 missense variants affecting arginine residues in RD2 are overrepresented in the cohort')
 
 ggsave('ANKRD11_simulations.png',plot=last_plot(),device='png',dpi=300,width=10,height=7)
 ggsave('ANKRD11_simulations.svg',plot=last_plot(),device='svg',dpi=300,width=10,height=7)
