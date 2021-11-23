@@ -1,0 +1,16 @@
+Ref	Alt	CpG_Status	Type	Mutation_Rate
+A	T	Non-CpG	Transversion	0.000000055
+A	C	Non-CpG	Transversion	0.000000055
+A	G	Non-CpG	Transition	0.000000012
+C	T	Non-CpG	Transition	0.000000012
+C	A	Non-CpG	Transversion	0.000000055
+C	G	Non-CpG	Transversion	0.000000055
+G	T	Non-CpG	Transversion	0.000000055
+G	C	Non-CpG	Transversion	0.000000055
+G	A	Non-CpG	Transition	0.000000012
+T	C	Non-CpG	Transition	0.000000012
+T	G	Non-CpG	Transversion	0.000000055
+T	A	Non-CpG	Transversion	0.000000055
+C	T	CpG	Transition	0.00000016
+C	A	CpG	Transversion	0.000000044
+C	G	CpG	Transversion	0.000000044
